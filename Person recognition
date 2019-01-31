@@ -31,11 +31,15 @@ for eachObject in detections:
 from IPython.display import Image
 Image("image_new.png")
 
+#Script to compare whether the images are static or not
+
 def mse(imageA, imageB):
     err = np.sum((imageA.astype("float") - imageB.astype("float")) ** 2)
     err /= float(imageA.shape[0] * imageA.shape[1])
     return err
- 
+
+#Defining a function to compare 2 images
+
 def compare_images(imageA, imageB, title):
     m = mse(imageA, imageB)
     s = ssim(imageA, imageB)
@@ -52,7 +56,10 @@ def compare_images(imageA, imageB, title):
     plt.axis("off")
     
     plt.show()
-    
+
+# Note that a value of 0 for MSE indicates perfect similarity. A value greater than one implies less similarity
+# As the MSE increases the images are less similar, as opposed to the SSIM where smaller values indicate less similarity
+
 # load the images
 original = cv2.imread("image_original.png")
 contrast = cv2.imread("image_contrast.png")
