@@ -34,3 +34,11 @@ Step 4:Now download the pretrained model required to generate predictions. This 
 Step 5: Copy the downloaded file to current working directory
 
 Step 6: Open jupyter notebook (type jupyter notebook in your terminal) and run the codes
+
+Points to remember:
+
+MSE - Mean Squared Error
+SSIM - Structural Similarity
+
+1. Note that a value of 0 for MSE indicates perfect similarity. A value greater than one implies less similarity
+2. As the MSE increases the images are less similar, as opposed to the SSIM where smaller values indicate less similarity
