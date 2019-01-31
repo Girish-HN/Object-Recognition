@@ -22,8 +22,11 @@ Step 3: Run the following command in cmd:
 Alternative Step 3
 
 Step 3: Navigate to the following page: https://github.com/OlafenwaMoses/ImageAI/releases
+        
         Download the package "imageai-2.0.2-py3-none-any.whl"
+        
         Navigate to the directory where the file is downloaded
+        
         Run the following command "pip install imageai-2.0.2-py3-none-any.whl"
 
 Step 4:Now download the pretrained model required to generate predictions. This model is based on RetinaNet https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5
